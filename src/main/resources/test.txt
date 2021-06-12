@@ -1,0 +1,10 @@
+hello just testing to check the code working or not !!!
+
+This is only test !!!!!!!
+
+{"name":"chousun-bucket-london-region", "key":"codebuild-source-test/src/README.md"}'
+curl POST http://localhost:8080/getS3Object -H 'Content-Type:application/json' -d '{"name": "chousun-bucket-london-region", "key": "codebuild-source-test/src/buildspec.yml"}'
+curl POST http://localhost:8080/getS3Object -H '"Content-Type":"application/json"' -d '{"name": "elasticbeanstalk-eu-west-2-700489304978", "key": "ebs-codebuild-test/appspec.yml"}'
+
+
+Invoke-RestMethod -Uri POST http://localhost:8080/getS3Object -H '"Content-Type":"application/json"' -body '{"name": "elasticbeanstalk-eu-west-2-700489304978", "key": "ebs-codebuild-test/appspec.yml"}'
